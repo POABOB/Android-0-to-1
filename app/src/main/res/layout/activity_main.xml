@@ -1,60 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-
-    <View
-        android:id="@+id/view_1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#F0F4">
-    </View>
-    <View
-        android:id="@+id/view_2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#FAA"
-        android:layout_below="@id/view_1">
-    </View>
-    <LinearLayout
-        android:id="@+id/ll_1"
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#fff"
-        android:layout_below="@id/view_2"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:text="按鈕">
+    </Button>
 
-        <View
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="#FF0033">
-        </View>
-        <RelativeLayout
-            android:id="@+id/ll_2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#eee"
-            android:padding="20dp">
-            <View
-                android:id="@+id/view_3"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FF2">
-            </View>
-            <View
-                android:id="@+id/view_4"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#FF0033"
-                android:layout_toRightOf="@id/view_3"
-                android:layout_marginLeft="10dp">
-            </View>
-        </RelativeLayout>
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hey"
+        android:textColor="#DEA"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="這次我沒有用Strings喔!!!!!"
+        android:layout_marginTop="10dp"
+        android:textColor="#FA0"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/light"
+        android:drawablePadding="5dp"
+        android:text="讚"
+        android:textColor="#FA0"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hey"
+        android:textColor="#DEA"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hey"
+        android:textColor="#DEA"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hey"
+        android:textColor="#DEA"
+        android:textSize="18sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="這次我沒有用Strings喔!!!!!次我沒有用Strings喔!!!!!次我沒有用Strings喔!!!!!次我沒有用Strings喔!!!!!次我沒有用Strings喔!!!!!"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#DEA"
+        android:textSize="18sp">
+    </TextView>
+</LinearLayout>
