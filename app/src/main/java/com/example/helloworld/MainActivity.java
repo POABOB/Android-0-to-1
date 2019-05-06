@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtn, mBtn2;
+    private Button mBtn, mBtn2, mBtn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +33,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mBtn3 = (Button) findViewById(R.id.btn_3);
+        mBtn3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //跳轉頁面當click事件發生，從Main跳到EditText頁面
+                Intent intent =new Intent(MainActivity.this, EditTextActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

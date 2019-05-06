@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittext"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="5dp"
+        android:maxLines="1">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        android:layout_below="@id/et_1"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"
+        android:paddingLeft="10dp"
+        android:hint="密碼"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:maxLines="1">
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn4"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:layout_below="@id/et_2"
+        android:textSize="20sp"
+        android:text="登入">
+    </Button>
+    <!--<EditText-->
+        <!--android:id="@+id/et_3"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="#aaa"-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_below="@id/et_2"-->
+        <!--android:inputType="number"-->
+        <!--android:background="@drawable/edittext"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:drawableLeft="@drawable/phone"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:hint="手機號碼"-->
+        <!--android:maxLines="1">-->
+    <!--</EditText>-->
+</RelativeLayout>

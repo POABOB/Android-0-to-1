@@ -11,14 +11,24 @@
         android:id="@+id/btn_1"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="往TextView">
+        android:text="往TextView"
+        android:textAllCaps="false">
     </Button>
 
     <Button
         android:id="@+id/btn_2"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="往按鈕">
+        android:text="往按鈕"
+        android:textAllCaps="false">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="往EditText"
+        android:textAllCaps="false">
     </Button>
 
 </LinearLayout>
