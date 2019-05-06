@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#AAA"
+        android:textColor="#EAF"
+        android:layout_margin="5dp"
+        android:text="按鈕1">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn2"
+        android:textColor="#EAF"
+        android:layout_below="@id/btn_1"
+        android:layout_margin="5dp"
+        android:text="按鈕2">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn3"
+        android:textColor="#EAF"
+        android:layout_below="@id/btn_2"
+        android:layout_margin="5dp"
+        android:text="按鈕3">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn4"
+        android:textColor="#000"
+        android:layout_below="@id/btn_3"
+        android:layout_margin="5dp"
+        android:onClick="showToast"
+        android:text="按鈕4">
+    </Button>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@id/btn_4"
+        android:text="@string/hey"
+        android:textColor="#DEA"
+        android:background="#EAA"
+        android:layout_margin="5dp"
+        android:textSize="18sp">
+    </TextView>
+
+
+</RelativeLayout>

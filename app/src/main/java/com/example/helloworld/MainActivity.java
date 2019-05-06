@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtn;
+    private Button mBtn, mBtn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
+        });
+
+        mBtn2 = (Button) findViewById(R.id.btn_2);
+        mBtn2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                //跳轉頁面當click事件發生，從Main跳到Button頁面
+                Intent intent =new Intent(MainActivity.this, ButtonActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
