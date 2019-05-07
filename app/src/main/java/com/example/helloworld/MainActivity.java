@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mBtn, mBtn2, mBtn3, mBtn4;
+    private Button mBtn, mBtn2, mBtn3, mBtn4, mBtn5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn2 = (Button) findViewById(R.id.btn_2);
         mBtn3 = (Button) findViewById(R.id.btn_3);
         mBtn4 = (Button) findViewById(R.id.btn_4);
+        mBtn5 = (Button) findViewById(R.id.btn_5);
         setListeners();
     }
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn2.setOnClickListener(onClick);
         mBtn3.setOnClickListener(onClick);
         mBtn4.setOnClickListener(onClick);
+        mBtn5.setOnClickListener(onClick);
     }
 
     private class Onclick implements View.OnClickListener{
@@ -52,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_4:
                     //跳轉頁面當click事件發生，從Main跳到RadioButton頁面
                     intent =new Intent(MainActivity.this, RadioButtonActivity.class);
+                    break;
+                case R.id.btn_5:
+                    //跳轉頁面當click事件發生，從Main跳到RadioButton頁面
+                    intent =new Intent(MainActivity.this, CheckBoxActivity.class);
                     break;
             }
             startActivity(intent);

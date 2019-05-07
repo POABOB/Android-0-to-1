@@ -37,4 +37,12 @@
         android:textAllCaps="false">
     </Button>
 
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="往Check Box"
+        android:textAllCaps="false">
+    </Button>
+
 </LinearLayout>
